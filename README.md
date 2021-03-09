@@ -6,7 +6,7 @@ March 2021
 
 * * *
 
-![logo](TailwindCSS/_readme-img/logo.jpg)
+![logo](_readme-img/logo.jpg)
 
 
 ## Dependancies / Install tailwindCSS
