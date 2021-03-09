@@ -6,7 +6,7 @@ March 2021
 
 * * *
 
-![logo](TailwindCSS/_readme-img/logo.webp)
+![logo](TailwindCSS/_readme-img/logo.jpg)
 
 
 ## Dependancies / Install tailwindCSS
@@ -49,63 +49,39 @@ Import the generated file in HTML.
 
 ### Size
 
-#### Padding / Margin
-
-#### Width / Height
+- Padding / Margin
+- Width / Height
 
 ### Typography
 
-#### Font size
-
-#### Text align
-
-#### Colors
-
-#### Font weight
-
-#### Font Family
-
-#### Font Style
-
-#### Letter Spacing
-
-#### Row height
-
-#### List Style Type
-
-#### Text opacity
-
-#### Texte-Décoration
-
-#### Text Transform
-
-#### Text Overflow / Break Words
+- Font size
+- Text align
+- Colors
+- Font weight
+- Font Family
+- Font Style
+- Letter Spacing
+- Row height
+- List Style Type
+- Text opacity
+- Texte-Décoration
+- Text Transform
+- Text Overflow / Break Words
 
 ### Background / Borders / Effects
 
-#### Background-color
-
-#### Background-Opacity
-
-#### Gradients
-
-#### Image/Repeat/Size/Attachment/Position
-
-#### Border Radius
-
-####  Border Width
-
-#### Border Color
-
-#### Border Opacity
-
-#### Border Style
-
-#### Divide Width/Color/Opacity/Style
-
-#### Ring Width/Color/Opacity/Style
-
-#### Button
+- Background-color
+- Background-Opacity
+- Gradients
+- Image/Repeat/Size/Attachment/Position
+- Border Radius
+-  Border Width
+- Border Color
+- Border Opacity
+- Border Style
+- Divide Width/Color/Opacity/Style
+- Ring Width/Color/Opacity/Style
+- Button
 
 ## Useful links
 
