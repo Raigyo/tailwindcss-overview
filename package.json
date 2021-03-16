@@ -4,7 +4,9 @@
   "description": "March 2021",
   "main": "index.js",
   "scripts": {
-   "build": "tailwindcss build ./css/input.css -o ./css/output.css"
+    "build": "postcss build ./css/input.css -o ./css/output.css",
+    "watch": "postcss build ./css/input.css -o ./css/output.css --watch",
+    "production": "cross-env NODE_ENV=production postcss ./css/input.css -o ./css/output.css"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +14,9 @@
     "autoprefixer": "^10.2.4",
     "postcss": "^8.2.6",
     "tailwindcss": "^2.0.3"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "postcss-cli": "^8.3.1"
   }
 }

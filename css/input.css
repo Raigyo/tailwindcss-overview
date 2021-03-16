@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* custom css */
+body {
+  background: rgb(13, 105, 136)!important;
+}
+
+.square {
+  @apply w-20 h-20;
+  background: rgb(13, 136, 29);
+}

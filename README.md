@@ -9,9 +9,9 @@ March 2021
 ![logo](_readme-img/logo.jpg)
 
 
-## Dependancies / Install tailwindCSS
+## Dependancies / Post process CSS / Custom classes
 
-[tailwindcss](https://tailwindcss.com/): A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
+- [tailwindcss](https://tailwindcss.com/): A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
 
 `npm install -D tailwindcss@latest postcss@latest autoprefixer@latest`
 
@@ -45,6 +45,109 @@ Import the generated file in HTML.
   </head>
 ````
 
+### CSS postprocess
+
+- [postcss-cli](https://www.npmjs.com/package/postcss-cli)
+
+`npm i postcss-cli`
+
+**postcss.config.js**
+
+````js
+module.exports = {
+  plugins: [require("tailwindcss"), require("autoprefixer")],
+};
+````
+
+````json
+ "scripts": {
+    "build": "postcss build ./css/input.css -o ./css/output.css",
+    "watch": "postcss build ./css/input.css -o ./css/output.css --watch"
+  },
+````
+
+To avoid to rebuild **output.css** (when changing **input.css**), use `npm run watch`.
+
+### Custom classes
+
+**input.css**
+
+````css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom css */
+body {
+  background: lightblue!important;
+}
+
+/* custom class using utility class from TW */
+.square {
+  @apply w-20 h-20;
+  background: rgb(13, 136, 29);
+}
+````
+
+### Custom Tailwind classes
+
+**tailwind.config.js**
+
+Extend classes:
+
+````js
+module.exports = {
+  theme: {
+    extend: {
+      spacing: {
+        verywide: "1500px",
+      },
+    },
+  },
+};
+````
+
+Replace ALL classes (here the colors provided by Tailwind.css will be replaced):
+
+````js
+module.exports = {
+  theme: {
+      colors: {
+        customColors: "#000",
+      },
+  },
+};
+````
+
+`npm run build` (watch mode doesn't work)
+
+Now class *w-verywide* can be use in html pages.
+
+### Purge CSS
+
+- [cross-env](https://www.npmjs.com/package/cross-env): Run scripts that set and use environment variables across platforms
+
+`npm i cross-env`
+
+**package.json**
+
+````json
+  "scripts": {
+    "production": "cross-env NODE_ENV=production postcss ./css/input.css -o ./css/output.css"
+  },
+````
+
+**tailwind.config.js**
+
+````js
+module.exports = {
+  purge: ["./*.html", "./**/*.html"],
+  theme: {
+    //...
+  },
+};
+````
+
 ## Overview
 
 ### Size
@@ -75,7 +178,7 @@ Import the generated file in HTML.
 - Gradients
 - Image/Repeat/Size/Attachment/Position
 - Border Radius
--  Border Width
+- Border Width
 - Border Color
 - Border Opacity
 - Border Style
@@ -83,8 +186,23 @@ Import the generated file in HTML.
 - Ring Width/Color/Opacity/Style
 - Button
 
+### Flexbox
+
+### Grid
+
+### Responsive
+
+- Media queries / min-width
+- Custom classes
+- Dark mode
+- Variants / Adding pseudo classes
+- Purge CSS
+
+### Transition and animations
+
 ## Useful links
 
 - [TailwindCSS](https://tailwindcss.com/)
 - [Ziratsu/Sandbox-Tailwind-Cours](https://github.com/Ziratsu/Sandbox-Tailwind-Cours)
+- [Ziratsu/Site-Formation-Tailwind](https://github.com/Ziratsu/Site-Formation-Tailwind)
 

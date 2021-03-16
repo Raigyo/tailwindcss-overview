@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,13 +32,20 @@
         -->
 
          <h1  class="text-red-400">Lorem ipsum dolor sit amet.</h1>
-        <h1  class="">Lorem ipsum dolor sit amet.</h1>
-        <h1  class="">Lorem ipsum dolor sit amet.</h1>
-        <h1  class="">Lorem ipsum dolor sit amet.</h1>
-        <h1  class="">Lorem ipsum dolor sit amet.</h1>
-        <h1  class="">Lorem ipsum dolor sit amet.</h1>
-
-        <div class="bg-red-50 w-16 h-16"></div>
+        <h1  class="sm:text-red-400">sm	640px</h1>
+        <h1  class="md:text-red-400">md	768px</h1>
+        <h1  class="lg:text-red-400">lg	1024px</h1>
+        <h1  class="xl:text-red-400">xl	1280px</h1>
+        <h1  class="2xl:text-red-400">2xl	1536px</h1>
+        <h2 class="text-4xl text-gray-50 pt-10 pb-5">Custom classes</h2>
+        <!-- Custom classes-->
+        <h1  class="mb-5 customRes:text-yellow-400">Screen - customRes: "1000px"</h1>
+        <div class="mb-5 square">New classe: square</div>
+        <div class="bg-red-50 w-16 h-16 w-veryWide text-red-400">New extended classe: w-veryWide</div>
+        <h2 class="text-4xl text-gray-50 pt-10 pb-5">Dark mode</h2>
+        <div class="w-40 h-40 bg-green-400 dark:bg-yellow-400">Green in clear mode / Yellow in dark mode</div>
+        <h2 class="text-4xl text-gray-50 pt-10 pb-5">Variants</h2>
+        <div class="w-40 h-40 bg-green-400 hover:bg-blue-300 active:bg-red-200">Extended pseudo class for background: active</div>
     </div>
   </body>
 </html>

@@ -42,25 +42,25 @@
     <div class="container mx-auto pb-60">
       <h2 class="text-4xl text-gray-50 pt-10 pb-5">Border Radius</h2>
       <!-- rounded- / none / (just)rounded / sm / md / lg / xl / 2xl / 3xl / full -->
-      <div class="w-1/2 h-20 bg-green-100"></div>
+      <div class="w-1/2 h-20 bg-green-100 rounded-3xl"><p class="text-red-900">bg-green-100 rounded-3xl</p></div>
 
       <h2 class="text-4xl text-gray-50 pt-10 pb-5">Border Width</h2>
       <!-- border-0 / 8 / (just)border -->
       <!-- border-(t,r,b,l)-0 / 8-->
-      <div class="w-1/2 h-20 bg-green-200"></div>
+      <div class="w-1/2 h-20 bg-green-200 border-4"><p class="text-red-900">border-4</p></div>
 
       <h2 class="text-4xl text-gray-50 pt-10 pb-5">Border Color</h2>
       <!-- border-black / white / red / -50 / 100 / 900 -->
       <!-- border-transparent -->
-      <div class="w-1/2 h-20 bg-green-300"></div>
+      <div class="w-1/2 h-20 bg-green-300 border-8 border-blue-400"><p class="text-red-900">border-8 border-blue-400</p></div>
 
       <h2 class="text-4xl text-gray-50 pt-10 pb-5">Border Opacity</h2>
       <!-- border-opacity-0 / 100 -->
-      <div class="w-1/2 h-20 bg-green-400"></div>
+      <div class="w-1/2 h-20 bg-green-400 border-8 border-blue-400 border-opacity-50"><p class="text-red-900">border-blue-400 border-opacity-50</p></div>
 
       <h2 class="text-4xl text-gray-50 pt-10 pb-5">Border Style</h2>
       <!-- border-solid / dashed / dotted / double / none -->
-      <div class="w-1/2 h-20 bg-green-500"></div>
+      <div class="w-1/2 h-20 bg-green-500 border-8 border-blue-600 border-dashed"><p class="text-red-900">border-8 border-blue-600 border-dashed</p></div>
 
       <!-- ------- Divide ------- -->
       <h2 class="text-4xl text-gray-50 pt-10 pb-5">
@@ -70,7 +70,7 @@
       <!-- Color : divide-yellow-500 -->
       <!-- Opacity : divide-opacity-50 -->
       <!-- Style : divide-solid / dashed / dotted / double / none -->
-      <div class="grid grid-cols-3 text-center">
+      <div class="grid grid-cols-3 text-center divide-x-2 divide-green-500">
         <div>1</div>
         <div>2</div>
         <div>3</div>
@@ -85,7 +85,7 @@
       <!-- Opacity : ring-opacity-50 -->
       <!-- Décalage width/height : ring-offset-0 / 1 / 2 / 4 / 8 -->
       <!-- Décalage couleur : ring-offset-red-700 -->
-      <button class="" >
+      <button class="ring-4 ring-blue-300" >
         Button
       </button>
     </div>
