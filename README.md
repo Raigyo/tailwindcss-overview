@@ -2,11 +2,13 @@
 
 March 2021
 
-> 🔨  TaildwindCSS de A à Z. From udemy: [Les animations CSS en 9 projets](https://www.udemy.com/course/taildwindcss-de-a-a-z/)
+> 🔨  TaildwindCSS framework. Overview and showcase website. From udemy: [TaildwindCSS de A à Z.](https://www.udemy.com/course/taildwindcss-de-a-a-z/)
 
 * * *
 
 ![logo](_readme-img/logo.jpg)
+
+![capture](_readme-img/capture-01.png)
 
 
 ## Dependancies / Post process CSS / Custom classes
@@ -148,7 +150,7 @@ module.exports = {
 };
 ````
 
-## Overview
+## [Overview](https://raigyo.github.io/tailwindcss-overview/overview.html)
 
 ### Size
 
@@ -205,4 +207,4 @@ module.exports = {
 - [TailwindCSS](https://tailwindcss.com/)
 - [Ziratsu/Sandbox-Tailwind-Cours](https://github.com/Ziratsu/Sandbox-Tailwind-Cours)
 - [Ziratsu/Site-Formation-Tailwind](https://github.com/Ziratsu/Site-Formation-Tailwind)
-
+- [A Free Gallery of Fantastic and Unique CSS Gradients](https://www.gradientmagic.com/)
