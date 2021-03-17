@@ -6,6 +6,12 @@ March 2021
 
 * * *
 
+Demo on Github page:
+
+[Overview](https://raigyo.github.io/tailwindcss-overview/overview.html)
+
+[Showcase website](https://raigyo.github.io/tailwindcss-overview/index.html)
+
 ![logo](_readme-img/logo.jpg)
 
 ![capture](_readme-img/capture-01.png)
