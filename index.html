@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TailwindCSS: Outil SEO</title>
+    <title>TailwindCSS: SEOTOOL</title>
     <link rel="stylesheet" href="./css/output.css" />
   </head>
   <body>
     <!-- Header -->
     <section class="home-bg-magic pt-6 pb-16 min-h-500 sm:pb-24 md:min-h-650">
-      <!-- Navigation -->
-      <nav class="max-w-7xl mx-auto relative flex items-center justify-center">
-        <div class="hidden md:left-0 md:inline md:absolute">
+      <!-- Navigation web-->
+      <nav class="hidden max-w-7xl mx-auto relative md:flex items-center justify-center">
+        <div class="md:left-0 md:inline md:absolute">
           <a href="#0">
             <img
               class="ml-4 w-auto h-12"
@@ -20,7 +20,7 @@
             >
           </a>
         </div>
-        <ul class="hidden md:flex md:space-x-10">
+        <ul class="md:flex md:space-x-10">
           <li>
             <a href="#0" class="font-medium text-lg text-black-500 hover:text-gray-900">
               Accueil
@@ -44,11 +44,46 @@
         </ul>
         <a
           href="#0"
-          class="hidden mr-4 shadow-md px-6 py-2 border font-medium round-md text-indigo-600
+          class="mr-4 shadow-md px-6 py-2 border font-medium round-md text-indigo-600
           bg-white hover:bg-gray-50 md:block md:absolute md:right-0"
         >
           Log in
         </a>
+      </nav>
+      <!-- Navigation mobile-->
+      <nav class="absolute top-2 w-11/12 left-1/2 transform -translate-x-1/2 shadow-md ring-1 ring-black ring-opacity-5 p-1 md:hidden rounded-lg bg-white">
+        <div class="px-5 h-16 flex items-center justify-between">
+          <a href="#0">
+            <img src="ressources/RocketLogo.svg" alt="logo fusée" class="h-8 w-auto sm:h-10">
+          </a>
+          <div class="-mr-2">
+            <button class="icone-toggle bg-white rounded-md p-2 inline-flex items-center justify-center ring-1 ring-black ring-opacity-20">
+              <img src="ressources/menu.svg" alt="icône de menu" class="h-6 w-6">
+            </button>
+          </div>
+        </div>
+        <ul class="toggle-menu hidden p-2">
+          <li>
+            <a href="#0" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+              Accueil
+            </a>
+          </li>
+          <li>
+            <a href="#0" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="#0" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+              Nos tarifs
+            </a>
+          </li>
+          <li>
+            <a href="#0" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+              Contact
+            </a>
+          </li>
+        </ul>
       </nav>
       <!-- Home -->
       <div class="mt-32 px-4 text-center sm:mt-28">
@@ -341,5 +376,79 @@
         </div>
       </div>
     </div>
+    <!-- Section contact form -->
+    <section class="bg-gray-50 pb-40">
+      <h2 class="text-center font-medium pt-10 pb-6 text-3xl md:text-4xl">
+        Rentrons en contact
+      </h2>
+      <hr class="block mx-auto bg-gray-600 h-1 mb-10 w-44">
+      <form action="#0" class="grid grid-cols-1 gap-y-6 relative bg-white max-w-3xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 xl:pl-12">
+        <div>
+          <label for="name" class="text-gray-500 mb-2 block">Nom complet</label>
+          <input
+            type="text"
+            id="name"
+            class="block w-full ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-500 border-gray-300 rounded-md"
+            placeholder="Votre nom"
+          />
+        </div>
+        <div>
+          <label for="firstname" class="text-gray-500 mb-2 block">Prénom</label>
+          <input
+            type="text"
+            id="firstname"
+            class="block w-full ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-500 border-gray-300 rounded-md"
+            placeholder="Votre prénom"
+          />
+        </div>
+        <div>
+          <label for="company" class="text-gray-500 mb-2 block">Votre entreprise</label>
+          <input
+            type="text"
+            id="company"
+            class="block w-full ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-500 border-gray-300 rounded-md"
+            placeholder="Votre entreprise"
+          />
+        </div>
+        <div>
+          <label for="message" class="text-gray-500 mb-2 block">Votre message</label>
+          <textarea
+            id="message"
+            class="block w-full ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-500 border-gray-300 rounded-md"
+            placeholder="Votre message"
+          ></textarea>
+        </div>
+        <div>
+          <button class="inline-flex justify-center items-center py-3 px-6 border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-700">
+            Envoyer
+          </button>
+        </div>
+      </form>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-5">
+      <h3 class="text-3xl pb-5 text-center text-white">
+        Retrouvez-nous ici
+      </h3>
+      <div class="mb-5 flex space-x-6 justify-center text-white">
+        <a href="#0">
+          <img src="ressources/fb.svg" alt="icône fb" class="h-6 w-6">
+        </a>
+        <a href="#0">
+          <img src="ressources/instagram.svg" alt="icône instagram" class="h-6 w-6">
+        </a>
+        <a href="#0">
+          <img src="ressources/githubpetitlogo.svg" alt="icône github" class="h-6 w-6">
+        </a>
+        <a href="#0">
+          <img src="ressources/twitter.svg" alt="icône twitter" class="h-6 w-6">
+        </a>
+      </div>
+      <hr class="w-36 mx-auto mb-5">
+      <p class="text-center mt-8 text-base text-gray-400 md:mt-0">
+        &copy; 2020 SEOTOOL, TOUS DROITS RÉSERVÉS
+      </p>
+    </footer>
+    <script src="./scripts/app.js"></script>
   </body>
 </html>

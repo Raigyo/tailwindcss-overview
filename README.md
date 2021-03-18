@@ -10,7 +10,7 @@ Demo on Github page:
 
 [Overview](https://raigyo.github.io/tailwindcss-overview/overview.html)
 
-[Showcase website](https://raigyo.github.io/tailwindcss-overview/index.html)
+[Showcase website "SEOTOOL"](https://raigyo.github.io/tailwindcss-overview/index.html)
 
 ![logo](_readme-img/logo.jpg)
 
